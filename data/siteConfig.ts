@@ -5,6 +5,10 @@ export const siteConfig = {
     "EDITH is an experimental context-aware AI wearable that helps multimodal AI understand what you see, hear and do.",
   location: "India",
   year: "2026",
+  founder: {
+    name: "Shivam",
+    photo: "/media/shivam.jpg",
+  },
   contact: {
     email: "",
     linkedin: "",
@@ -14,7 +18,6 @@ export const siteConfig = {
   media: {
     hero: { type: "video" as const, src: "/media/prototype-demo.mp4", poster: "/media/prototype-poster.jpg" },
     prototype: { type: "video" as const, src: "/media/prototype-demo.mp4", poster: "/media/prototype-poster.jpg" },
-    founderPhoto: "",
   },
 };
 

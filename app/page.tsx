@@ -9,6 +9,7 @@ import { SignupForm } from "@/components/SignupForm";
 import { progress } from "@/data/progress";
 import { roadmap } from "@/data/roadmap";
 import { siteConfig } from "@/data/siteConfig";
+import Image from "next/image";
 
 const ideaSteps = [
   ["01", "See / Hear", "EDITH captures relevant visual and audio context."],
@@ -137,8 +138,10 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ i
       </section>
 
       <section className="founder section shell" id="founder">
-        <div className="founder-photo" role="img" aria-label="Founder photo placeholder"><span>FOUNDER PHOTO</span><small>Add image in siteConfig.ts</small></div>
-        <Reveal className="founder-copy"><p className="eyebrow">11 / FOUNDER</p><h2>Built by Hariom.</h2><blockquote>“I’m building EDITH because I believe the biggest limitation of today’s AI assistants is not intelligence — it is context.”</blockquote><p>I’m currently prototyping EDITH from India using inexpensive hardware, existing smartphones and rapidly improving multimodal models.</p><p>I’m interested in talking to early users, researchers, builders, investors and anyone thinking deeply about how humans will interact with AI beyond the screen.</p><a className="text-link" href={siteConfig.contact.email ? `mailto:${siteConfig.contact.email}` : "#follow"}>Get in touch <ArrowUpRight className="icon" /></a></Reveal>
+        <div className="founder-photo">
+          {siteConfig.founder.photo ? <Image src={siteConfig.founder.photo} alt={`${siteConfig.founder.name}, founder of EDITH`} fill sizes="(max-width: 700px) 100vw, 35vw" /> : <><span>FOUNDER PHOTO</span><small>Add image in siteConfig.ts</small></>}
+        </div>
+        <Reveal className="founder-copy"><p className="eyebrow">11 / FOUNDER</p><h2>Built by {siteConfig.founder.name}.</h2><blockquote>“I’m building EDITH because I believe the biggest limitation of today’s AI assistants is not intelligence — it is context.”</blockquote><p>I’m currently prototyping EDITH from India using inexpensive hardware, existing smartphones and rapidly improving multimodal models.</p><p>I’m interested in talking to early users, researchers, builders, investors and anyone thinking deeply about how humans will interact with AI beyond the screen.</p><a className="text-link" href={siteConfig.contact.email ? `mailto:${siteConfig.contact.email}` : "#follow"}>Get in touch <ArrowUpRight className="icon" /></a></Reveal>
       </section>
 
       <section className="closing section shell">

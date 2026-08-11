@@ -22,7 +22,7 @@ public/media/prototype-front.jpg
 public/media/prototype-side.jpg
 public/media/demo-restaurant.mp4
 public/media/demo-object.mp4
-public/media/hariom.jpg
+public/media/shivam.jpg
 ```
 
 Then edit `data/siteConfig.ts`. Every media path and founder/social link lives there. Missing files render as deliberate placeholders, so the page will not break.
@@ -52,7 +52,7 @@ Vimeo embeds work with the same `youtube` type by using a Vimeo player embed URL
 
 ### Add photos
 
-Set a media item to `type: "image"` and use a path such as `/media/prototype-front.jpg`. The founder image path is already centralized as `media.founderPhoto`; the visual placeholder can be replaced with `next/image` in `app/page.tsx` once a real photo is available.
+Set a media item to `type: "image"` and use a path such as `/media/prototype-front.jpg`. Change the founder name and photo together under `founder` in `data/siteConfig.ts`.
 
 ## Edit the content
 
