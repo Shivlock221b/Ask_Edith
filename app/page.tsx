@@ -38,7 +38,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ i
           <Reveal delay={.05}><h1>EDITH</h1></Reveal>
           <Reveal delay={.1}><p className="hero-title">Give AI eyes and ears<br />in the real world.</p></Reveal>
           <Reveal delay={.15}><p className="hero-description">EDITH is a low-cost context layer that helps AI understand what you see, hear, and do — so you don’t have to explain everything first.</p></Reveal>
-          <Reveal delay={.2} className="hero-actions"><a href="#demo" className="button button-primary"><Play className="icon" />Watch the 30-sec demo</a><a href="#how-it-works" className="button button-ghost">See how it works <ArrowDown className="icon" /></a></Reveal>
+          <Reveal delay={.2} className="hero-actions"><a href="#demo" className="button button-primary"><Play className="icon" />Watch the 5-min demo</a><a href="#how-it-works" className="button button-ghost">See how it works <ArrowDown className="icon" /></a></Reveal>
           <Reveal delay={.25}><p className="made-in">Built from India. Designed for everywhere.</p></Reveal>
         </div>
         <div className="hero-visual"><MediaFrame media={siteConfig.media.hero} /></div>
@@ -81,7 +81,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ i
       <section className="prototype section" id="prototype">
         <div className="shell">
           <SectionHeader eyebrow="04 / WORKING PROTOTYPE" title="EDITH v0 — very early, but working." copy="Built with inexpensive off-the-shelf components to test one question first: is context-aware interaction genuinely useful?" />
-          <div id="demo"><MediaFrame media={siteConfig.media.prototype} variant="demo" label="30-second EDITH prototype demo" /></div>
+          <div id="demo"><MediaFrame media={siteConfig.media.prototype} variant="demo" label="5-min EDITH prototype demo" /></div>
           <div className="capabilities">
             {[["01", "Visual context", "Camera captures what the user is looking at."], ["02", "Voice query", "The user asks EDITH a contextual question."], ["03", "Multimodal reasoning", "Image and speech are processed together by AI."], ["04", "Audio response", "EDITH responds through a phone or connected earbuds."]].map(([num, title, copy]) => <Reveal className="capability" key={num}><span>{num}</span><h3>{title}</h3><p>{copy}</p></Reveal>)}
           </div>
