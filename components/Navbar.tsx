@@ -14,7 +14,7 @@ export function Navbar() {
         <div className="nav-links">
           {navItems.map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}
         </div>
-        <a className="nav-cta" href="#demo"><Play className="icon" /> Watch demo</a>
+        <a className="nav-cta" href="#follow">Join early access <ArrowUpRight className="icon" /></a>
         <button className="menu-button" onClick={() => setOpen(!open)} aria-expanded={open} aria-label="Toggle navigation">
           {open ? <Close className="icon" /> : <Menu className="icon" />}
         </button>
@@ -23,6 +23,7 @@ export function Navbar() {
         {open && (
           <motion.div className="mobile-menu" initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}>
             {navItems.map((item) => <a key={item.href} href={item.href} onClick={() => setOpen(false)}>{item.label}<ArrowUpRight className="icon" /></a>)}
+            <a href="#follow" onClick={() => setOpen(false)}>Join early access <ArrowUpRight className="icon" /></a>
             <a href="#demo" onClick={() => setOpen(false)}>Watch demo <Play className="icon" /></a>
           </motion.div>
         )}

@@ -31,3 +31,7 @@ export function VolumeOn({ className = "" }: IconProps) {
 export function VolumeOff({ className = "" }: IconProps) {
   return <svg className={className} viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 8h3l4-3v10l-4-3H4V8Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /><path d="m14 8 4 4m0-4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>;
 }
+
+export function XLogo({ className = "" }: IconProps) {
+  return <svg className={className} viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 3h3.6l3.3 4.4L14.8 3H16l-4.5 5.2L17 17h-3.6l-3.7-5-4.4 5H4l5-5.8L4 3Zm3 1.1H5.9l8.1 11.8h1.2L7 4.1Z" fill="currentColor" /></svg>;
+}

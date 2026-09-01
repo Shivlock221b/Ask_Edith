@@ -7,7 +7,7 @@ import { Play } from "./icons";
 
 type Media = { type: "placeholder" | "video" | "youtube" | "image"; src: string; poster?: string };
 
-export function MediaFrame({ media, variant = "hero", label = "Prototype media placeholder" }: { media: Media; variant?: "hero" | "demo"; label?: string }) {
+export function MediaFrame({ media, variant = "hero", label = "Prototype media placeholder", notice }: { media: Media; variant?: "hero" | "demo"; label?: string; notice?: string }) {
   const [failed, setFailed] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const placeholder = media.type === "placeholder" || !media.src || failed;
@@ -21,7 +21,7 @@ export function MediaFrame({ media, variant = "hero", label = "Prototype media p
 
   return (
     <motion.div className={`media-frame media-${variant}`} initial={{ opacity: 0, scale: .98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: .8, delay: .2 }}>
-      <div className="media-chrome"><span>EDITH / OPTICAL INPUT</span><span>REC • 00:00:00</span></div>
+      <div className="media-chrome"><span>EDITH / {media.type === "image" ? "CONCEPT STUDY" : "OPTICAL INPUT"}</span><span>{media.type === "image" ? "FORM / 01" : "REC • 00:00:00"}</span></div>
       {placeholder && (
         <div className="device-stage">
           <div className="scanline" />
@@ -50,9 +50,9 @@ export function MediaFrame({ media, variant = "hero", label = "Prototype media p
           />
         </>
       )}
-      {!placeholder && media.type === "image" && <div className="media-image"><Image src={media.src} alt={label} fill sizes="(max-width: 700px) 100vw, 70vw" onError={() => setFailed(true)} /></div>}
+      {!placeholder && media.type === "image" && <div className="media-image"><Image src={media.src} alt={label} fill sizes="(max-width: 700px) 100vw, 70vw" onError={() => setFailed(true)} />{notice && <span className="media-notice">{notice}</span>}</div>}
       {!placeholder && media.type === "youtube" && <iframe src={media.src} title={label} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />}
-      <div className="media-footer"><span>PROTOTYPE_00</span><span>INDIA / 2026</span></div>
+      <div className="media-footer"><span>{media.type === "image" ? "CONCEPT / NOT CURRENT HARDWARE" : "PROTOTYPE_00"}</span><span>INDIA / 2026</span></div>
     </motion.div>
   );
 }

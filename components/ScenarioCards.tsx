@@ -20,10 +20,10 @@ export function ScenarioCards() {
         <motion.article key={item.title} className="scenario-detail" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: .3 }}>
           <div className="scenario-top"><span className={`status status-${item.status.toLowerCase().replaceAll(" ", "-")}`}>{item.status}</span><span>{item.number} / {String(useCases.length).padStart(2, "0")}</span></div>
           <dl>
-            <div><dt>What the user sees</dt><dd>{item.sees}</dd></div>
+            <div><dt>Context available</dt><dd>{item.sees}</dd></div>
             <div><dt>What the user asks</dt><dd className="quote">“{item.asks}”</dd></div>
             <div><dt>What EDITH understands</dt><dd>{item.understands}</dd></div>
-            <div><dt>What EDITH does</dt><dd>{item.outcome}</dd></div>
+            <div><dt>Result</dt><dd>{item.outcome}</dd></div>
           </dl>
         </motion.article>
       </AnimatePresence>

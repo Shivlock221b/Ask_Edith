@@ -5,8 +5,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Plus } from "./icons";
 
 const nodes = [
-  ["01", "Capture", "Camera + Mic"], ["02", "Device", "ESP32-S3"], ["03", "Transport", "Wi-Fi / Phone"],
-  ["04", "Interpret", "Speech-to-Text"], ["05", "Reason", "Multimodal AI"], ["06", "Return", "Phone / Earbuds"],
+  ["01", "Context", "Camera + Mic"], ["02", "Interpret", "Speech + Vision"], ["03", "Reason", "EDITH Core"],
+  ["04", "Plan", "Agent + Tools"], ["05", "Control", "Confirm if needed"], ["06", "Outcome", "Answer or Action"],
 ];
 
 export function Architecture() {
@@ -23,7 +23,7 @@ export function Architecture() {
         ))}
       </div>
       <AnimatePresence>
-        {expanded && <motion.p className="architecture-note" initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }}>The device captures only what is needed. Networking, speech recognition, model reasoning and audio delivery stay in the connected phone/cloud layer—keeping v0 inexpensive and easy to iterate.</motion.p>}
+        {expanded && <motion.p className="architecture-note" initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }}>A single wearable interaction becomes one authoritative EDITH interaction. EDITH Core combines speech, optional vision, memory, and intent; selects permissioned tools; requests confirmation for consequential actions; then returns the answer, result, and speech output.</motion.p>}
       </AnimatePresence>
     </div>
   );

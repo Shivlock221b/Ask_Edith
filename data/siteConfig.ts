@@ -1,31 +1,31 @@
 export const siteConfig = {
   name: "EDITH",
-  title: "EDITH — Context for AI in the Real World",
+  title: "EDITH — The Interface for AI Agents in the Real World",
   description:
-    "EDITH is an experimental context-aware AI wearable that helps multimodal AI understand what you see, hear and do.",
+    "EDITH combines a context-aware wearable with an orchestration layer that helps users see, hear, remember, delegate and act.",
   location: "India",
   year: "2026",
   founder: {
-    name: "Shivam",
+    name: "Shivam Tiwari",
     photo: "/media/shivam.jpg",
   },
   contact: {
-    email: "",
+    email: "shivam.83240@gmail.com",
     linkedin: "",
-    x: "",
+    x: "https://x.com/shivamt_builds",
+    xHandle: "@shivamt_builds",
     github: "",
   },
   media: {
-    hero: { type: "video" as const, src: "/media/prototype-demo.mp4", poster: "/media/prototype-poster.jpg" },
+    hero: { type: "image" as const, src: "/media/edith-concept-enclosure.jpg", poster: "" },
     prototype: { type: "video" as const, src: "/media/prototype-demo.mp4", poster: "/media/prototype-poster.jpg" },
   },
 };
 
 export const navItems = [
-  { label: "Vision", href: "#vision" },
-  { label: "Prototype", href: "#prototype" },
+  { label: "Product", href: "#vision" },
   { label: "How it works", href: "#how-it-works" },
+  { label: "Prototype", href: "#prototype" },
   { label: "Progress", href: "#progress" },
-  { label: "Roadmap", href: "#roadmap" },
   { label: "Founder", href: "#founder" },
 ];

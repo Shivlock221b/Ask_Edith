@@ -1,0 +1,214 @@
+
+===== SLIDE 1 =====
+EDITH
+The interface for
+AI agents in the real world.
+See. Hear. Remember. Delegate. Act.
+Context-aware wearable + agent orchestration layer
+Built from India for the agentic AI era.
+The image shows an AI generated prototype enclosure. The real enclosure will be different from the image but conceptually the 
+same
+
+
+===== SLIDE 2 =====
+THE PROBLEM
+Thousands of agents exist.
+Billions are coming.
+There is no native interface for them.
+Agent.ai alone lists 2,410+ AI agents today. Statista forecasts active enterprise AI 
+agents will exceed 2.2B by 2030. Gartner expects 33% of enterprise software 
+apps to include agentic AI by 2028.
+TODAY
+Agent directories already contain thousands 
+of agents.
+2030
+Enterprise agents are forecast to reach 
+billions.
+GAP
+Users still open apps, explain context, and 
+coordinate manually.
+The bottleneck is no longer intelligence. It is interaction.
+Sources: Agent.ai, Statista (active enterprise AI agents forecast), Gartner agentic AI forecast.
+
+
+===== SLIDE 3 =====
+THE CURRENT SITUATION
+We have powerful agents.
+We still use them like apps.
+CHAT INTERFACES
+Great at reasoning.
+Require intentional input and 
+context.
+SMARTPHONES
+Great at access.
+Every action lives in a separate app.
+AI WEARABLES
+Great at capture.
+Most remain narrow, single-purpose 
+interfaces.
+The next interface needs to unify context, orchestration and action.
+
+
+===== SLIDE 4 =====
+THE AHA
+Mobile apps needed the smartphone.
+AI agents need their own interface.
+EDITH - Every day intelligence that helps
+Context  →  Orchestration  →  Action
+Not another chatbot. Not just visual AI.
+A native interaction layer for the agentic AI era.
+
+
+===== SLIDE 5 =====
+THE SOLUTION
+One interface. Your context.
+Your agents.
+Example
+You see a bug in UI and say: “Fix this in Codex and email me the summary.”
+EDITH sees the screen, hears the request, recalls memory, plans the workflow, calls agents and executes.
+HOW IT WORKS
+01
+Capture
+Touch to speak and capture 
+visual + audio context.
+02
+Context
+Combine prompt, vision and 
+semantic memory.
+03
+Planner
+LLM planner decides what 
+needs to happen.
+04
+Orchestration
+Route task to Codex, Gmail 
+or other agents.
+05
+Action
+Complete the task and return 
+the result.
+Output: Codex drafts the fix. Gmail prepares the summary. EDITH reports back.
+
+
+===== SLIDE 6 =====
+THE VISION
+EDITH becomes the orchestration layer
+for a user’s entire agent ecosystem.
+CONTEXT LAYER
+Vision • voice • memory • location • history
+ORCHESTRATION LAYER
+Routes intent to the right agent, chains 
+agents, and manages permissions.
+AGENT STORE
+Discover, install and compose specialized 
+agents for work and life.
+YOUR AGENTS
+Gmail
+Calendar
+Swiggy
+Codex
+Travel
+Finance
+Home
+Health
+…
+The device is the entry point. The platform is the business.
+
+
+===== SLIDE 7 =====
+THE BUSINESS MODEL
+₹12,000
+annual spend per user
+10M users × ₹12,000/year = ₹12,000 Cr initial India opportunity
+Device creates distribution. Recurring AI revenue scales with memory, integrations and agent usage.
+Future upside: agent store / workflow take-rate.
+Assumptions: 10M+ India beachhead users (~1% of Indian smartphone users). Year-1 spend: ₹6,000 device + ₹500/month AI/agents subscription = ₹12,000/customer. Excludes future agent-store take-rate and services.
+DEVICE
+₹6,000 one-time
+Hardware margin + access point
+AI / AGENTS
+₹500 / month
+₹6,000 annual recurring revenue
+
+
+===== SLIDE 8 =====
+THE ASK
+Raising $10,000 to turn the prototype
+into a user-testable product.
+Use of funds
+$4K
+Hardware
+Production-ready prototype iterations + parts
+$3K
+AI / Agents
+Deeper memory, orchestration and integrations
+$3K
+Users
+Pilot deployments, feedback loops and demo polish
+Milestone:
+A reliable EDITH prototype that users can wear, talk to and delegate work through.
+
+
+===== SLIDE 9 =====
+THE FOUNDER
+Shivam Tiwari
+Computer Science Graduate
+National University of Singapore
+Full scholar. NUS CS graduate. Worked across startups. Building 
+products since high school.
+BEFORE EDITH
+Web + mobile
+THEN
+AI agents
+NOW
+Hardware + firmware
+NEXT
+EDITH interface
+Built websites,
+apps + startup MVPs
+ClosetShare, GrupIn,
+Kaydaar - A Local Commerce app, 
+onboard clients like Levi’s and 
+Raymond
+ReVault - A video reviews based social 
+commerce app, crossed more than 100 
+creators
+Built LLM workflows,
+automations + tools
+HousAt AI,
+QueueTracker - A swiggy MCP based 
+web agent to live track your table 
+booking at a restaurant and pre-order 
+meals.
+Built EDITH V1:
+wearable + memory stack
+Demo Link
+Build the agentic
+interface layer
+Agent store for users to download and 
+integrate agents within EDITH
+Agent OS - A smartphone/Desktop OS 
+completely run by Local SLM. 
+Agent Phone - A AI phone built to run 
+models locally and become the brain 
+behind ambient AI like EDITH
+
+
+===== SLIDE 10 =====
+CONTACT
+EDITH
+The interface for AI agents in the real world.
+Let’s build the agentic interface layer from India.
+Founder
+Shivam
+shivam.83240@gmail.com
+The image shows an AI generated prototype enclosure. The real enclosure will be different from the image but conceptually the 
+same
+EDITH V1- Demo Link
+
+
+===== SLIDE 11 =====
+APPENDIX
+Reference materials
+Market reports / research→
+Competitive landscape→

@@ -1,6 +1,6 @@
 # EDITH investor website
 
-A responsive, single-page Next.js site for the EDITH v0 context-aware AI wearable. The site uses the App Router, TypeScript, Tailwind CSS, Framer Motion, and data-driven content files.
+A responsive, single-page Next.js site for EDITH, a wearable AI context assistant that combines multimodal perception, memory, agent planning, and connected actions. The site uses the App Router, TypeScript, Tailwind CSS, Framer Motion, and data-driven content files.
 
 ## Run locally
 
