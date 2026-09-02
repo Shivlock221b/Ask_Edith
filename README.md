@@ -87,6 +87,8 @@ Do not use a `NEXT_PUBLIC_` prefix and never commit `.env.local`. The secret key
 
 Restart `npm run dev` after changing environment variables. Submit a test address, then open **Table Editor → edith_signups** in Supabase to confirm the row appears.
 
+If the server reports `getaddrinfo ENOTFOUND`, the configured Project URL does not resolve. Open the Supabase dashboard, resume the project if it is paused, then copy the current **Project URL** from the project’s **Connect** dialog. Make sure the URL and secret key come from the same project and restart the development server.
+
 ### 3. Configure Vercel
 
 In the Vercel project, open **Settings → Environment Variables** and add `SUPABASE_URL` and `SUPABASE_SECRET_KEY`. Apply them to Production, Preview, and Development as appropriate, then redeploy the site.

@@ -17,16 +17,22 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Signup storage is temporarily unavailable." }, { status: 503 });
   }
 
-  const response = await fetch(`${supabaseUrl}/rest/v1/edith_signups?on_conflict=email`, {
-    method: "POST",
-    headers: {
-      apikey: supabaseSecretKey,
-      "Content-Type": "application/json",
-      Prefer: "resolution=ignore-duplicates,return=minimal",
-    },
-    body: JSON.stringify({ email, source: "website" }),
-    cache: "no-store",
-  });
+  let response: Response;
+  try {
+    response = await fetch(`${supabaseUrl}/rest/v1/edith_signups?on_conflict=email`, {
+      method: "POST",
+      headers: {
+        apikey: supabaseSecretKey,
+        "Content-Type": "application/json",
+        Prefer: "resolution=ignore-duplicates,return=minimal",
+      },
+      body: JSON.stringify({ email, source: "website" }),
+      cache: "no-store",
+    });
+  } catch (error) {
+    console.error("Supabase signup request could not connect:", error instanceof Error ? error.message : "Unknown network error");
+    return NextResponse.json({ error: "Signup storage is temporarily unreachable." }, { status: 503 });
+  }
 
   if (!response.ok) {
     console.error("Supabase signup insert failed:", response.status);
