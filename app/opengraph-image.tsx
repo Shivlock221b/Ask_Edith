@@ -16,102 +16,284 @@ export default async function Image() {
         height: "100%",
         width: "100%",
         display: "flex",
-        position: "relative",
+        flexDirection: "column",
         overflow: "hidden",
         background: "#0a0a09",
-        color: "#f1f0e9",
+        color: "#f2f1e9",
         fontFamily: "Arial, sans-serif",
       }}
     >
-      <img
-        src={heroImageData as unknown as string}
-        alt=""
-        width={685}
-        height={941}
-        style={{
-          position: "absolute",
-          top: 0,
-          right: 0,
-          width: "56%",
-          height: "100%",
-          objectFit: "cover",
-          objectPosition: "center 48%",
-        }}
-      />
       <div
         style={{
-          position: "absolute",
-          inset: 0,
-          display: "flex",
-          background:
-            "linear-gradient(90deg, #0a0a09 0%, #0a0a09 42%, rgba(10,10,9,0.92) 53%, rgba(10,10,9,0.22) 78%, rgba(10,10,9,0.08) 100%)",
-        }}
-      />
-
-      <div
-        style={{
-          zIndex: 1,
+          height: 72,
           width: "100%",
+          flexShrink: 0,
           display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          padding: "62px 68px",
+          alignItems: "center",
+          padding: "0 44px",
+          borderBottom: "1px solid #292925",
+          background: "#0d0d0c",
         }}
       >
         <div
           style={{
             display: "flex",
             alignItems: "center",
-            gap: 16,
-            fontSize: 28,
-            letterSpacing: 8,
+            gap: 10,
+            fontSize: 16,
+            fontWeight: 700,
+            letterSpacing: 3,
           }}
         >
           <span
             style={{
-              width: 12,
-              height: 12,
+              width: 8,
+              height: 8,
               borderRadius: 99,
               background: "#d5ff3f",
             }}
           />
           EDITH
-        </div>
-
-        <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
-          <div
-            style={{
-              display: "flex",
-              maxWidth: 650,
-              fontSize: 68,
-              letterSpacing: -3,
-              lineHeight: 1.02,
-            }}
-          >
-            AI agents, in the real world.
-          </div>
-          <div
-            style={{
-              display: "flex",
-              maxWidth: 555,
-              color: "#c6c5bd",
-              fontSize: 24,
-              lineHeight: 1.35,
-            }}
-          >
-            See. Hear. Remember. Delegate. Act.
-          </div>
+          <span style={{ color: "#707069", fontSize: 11, letterSpacing: 1 }}>
+            / v0
+          </span>
         </div>
 
         <div
           style={{
             display: "flex",
-            color: "#9a9a91",
-            fontSize: 15,
-            letterSpacing: 1.6,
+            gap: 28,
+            marginLeft: "auto",
+            marginRight: 30,
+            color: "#aaa9a0",
+            fontSize: 12,
           }}
         >
-          AI-GENERATED CONCEPT · NOT CURRENT HARDWARE
+          <span>Product</span>
+          <span>How it works</span>
+          <span>Prototype</span>
+          <span>Progress</span>
+        </div>
+
+        <div
+          style={{
+            height: 40,
+            display: "flex",
+            alignItems: "center",
+            padding: "0 17px",
+            borderRadius: 2,
+            background: "#d5ff3f",
+            color: "#151513",
+            fontSize: 12,
+            fontWeight: 700,
+          }}
+        >
+          Join early access&nbsp; →
+        </div>
+      </div>
+
+      <div
+        style={{
+          width: "100%",
+          flex: 1,
+          display: "flex",
+          alignItems: "center",
+          gap: 42,
+          padding: "38px 44px 34px",
+        }}
+      >
+        <div
+          style={{
+            width: "49%",
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            style={{
+              width: 430,
+              display: "flex",
+              alignItems: "center",
+              gap: 9,
+              padding: "9px 13px",
+              border: "1px solid #292925",
+              borderRadius: 99,
+              color: "#aaa9a0",
+              fontSize: 10,
+              letterSpacing: 1.1,
+            }}
+          >
+            <span
+              style={{
+                width: 6,
+                height: 6,
+                borderRadius: 99,
+                background: "#d5ff3f",
+              }}
+            />
+            EDITH CORE · WORKING PROTOTYPE · BUILDING NOW
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              marginTop: 30,
+              fontSize: 104,
+              fontWeight: 600,
+              letterSpacing: -8,
+              lineHeight: 0.76,
+            }}
+          >
+            EDITH
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              marginTop: 35,
+              maxWidth: 525,
+              fontSize: 38,
+              letterSpacing: -2,
+              lineHeight: 1.01,
+            }}
+          >
+            The interface for AI agents in the real world.
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              marginTop: 18,
+              maxWidth: 500,
+              color: "#aaa9a0",
+              fontSize: 16,
+              lineHeight: 1.45,
+            }}
+          >
+            See. Hear. Remember. Delegate. Act. Context and action through one
+            wearable interaction.
+          </div>
+
+          <div style={{ display: "flex", gap: 12, marginTop: 24 }}>
+            <div
+              style={{
+                height: 43,
+                display: "flex",
+                alignItems: "center",
+                padding: "0 18px",
+                borderRadius: 2,
+                background: "#d5ff3f",
+                color: "#151513",
+                fontSize: 12,
+                fontWeight: 700,
+              }}
+            >
+              Join early access&nbsp; →
+            </div>
+            <div
+              style={{
+                height: 43,
+                display: "flex",
+                alignItems: "center",
+                padding: "0 18px",
+                border: "1px solid #292925",
+                borderRadius: 2,
+                color: "#f2f1e9",
+                fontSize: 12,
+              }}
+            >
+              Watch the demo
+            </div>
+          </div>
+        </div>
+
+        <div
+          style={{
+            width: "51%",
+            display: "flex",
+            flexDirection: "column",
+            overflow: "hidden",
+            border: "1px solid #30302b",
+            background: "#0e0e0c",
+            transform: "rotate(0.5deg)",
+            boxShadow: "0 28px 80px rgba(0,0,0,0.35)",
+          }}
+        >
+          <div
+            style={{
+              height: 35,
+              flexShrink: 0,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              padding: "0 13px",
+              borderBottom: "1px solid #242421",
+              color: "#77776f",
+              fontSize: 9,
+              letterSpacing: 1.2,
+            }}
+          >
+            <span>EDITH / CONCEPT STUDY</span>
+            <span>FORM / 01</span>
+          </div>
+
+          <div
+            style={{
+              height: 405,
+              display: "flex",
+              position: "relative",
+              overflow: "hidden",
+            }}
+          >
+            <img
+              src={heroImageData as unknown as string}
+              alt=""
+              width={685}
+              height={941}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                objectPosition: "center 46%",
+              }}
+            />
+            <div
+              style={{
+                position: "absolute",
+                left: 13,
+                bottom: 13,
+                display: "flex",
+                padding: "8px 10px",
+                border: "1px solid rgba(255,255,255,0.28)",
+                background: "rgba(10,10,9,0.82)",
+                color: "#dfded6",
+                fontSize: 8,
+                letterSpacing: 1,
+              }}
+            >
+              AI-GENERATED CONCEPT · NOT CURRENT HARDWARE
+            </div>
+          </div>
+
+          <div
+            style={{
+              height: 35,
+              flexShrink: 0,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              padding: "0 13px",
+              borderTop: "1px solid #242421",
+              color: "#62625a",
+              fontSize: 9,
+              letterSpacing: 1.2,
+            }}
+          >
+            <span>CONCEPT / NOT CURRENT HARDWARE</span>
+            <span>INDIA / 2026</span>
+          </div>
         </div>
       </div>
     </div>,
