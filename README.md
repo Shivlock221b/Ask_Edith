@@ -1,6 +1,6 @@
-# EDITH investor website
+# EDITH demo website
 
-A responsive, single-page Next.js site for EDITH, a wearable AI context assistant that combines multimodal perception, memory, agent planning, and connected actions. The site uses the App Router, TypeScript, Tailwind CSS, Framer Motion, and data-driven content files.
+A responsive, single-page demo and technical portfolio for EDITH, a wearable AI agent prototype designed and built by Shivam Tiwari. The site presents the working video, live flows, architecture, build log, and contact information for teams working on related products.
 
 ## Run locally
 
@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:3000`. Test the optional investor view at `http://localhost:3000/?investor=true`.
+Open `http://localhost:3000`.
 
 ## Where to add assets
 
@@ -57,14 +57,13 @@ Set a media item to `type: "image"` and use a path such as `/media/prototype-fro
 ## Edit the content
 
 - `data/siteConfig.ts` — media, navigation, contact and social links
-- `data/progress.ts` — chronological build log
+- `data/projects.ts` — selected live portfolio projects
 - `data/useCases.ts` — interactive examples and status tags
-- `data/roadmap.ts` — upcoming work
-- `app/page.tsx` — long-form page copy
+- `app/page.tsx` — demo, system, build story, and profile copy
 
-## Email signup with Supabase
+## Optional email signup backend
 
-The signup form posts to the server-only route at `app/api/follow/route.ts`, which validates and normalizes the address before inserting it into the private `edith_signups` table. Duplicate addresses are accepted without creating duplicate rows. A hidden honeypot filters simple form bots.
+The demo-focused homepage no longer shows an early-access form. The existing server route remains available if a signup form is restored later. It validates and normalizes addresses before inserting them into the private `edith_signups` table.
 
 ### 1. Create a Supabase project and table
 

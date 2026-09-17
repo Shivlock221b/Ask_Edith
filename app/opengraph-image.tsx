@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "EDITH — The interface for AI agents in the real world";
+export const alt = "EDITH — A working wearable AI agent prototype";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -69,10 +69,10 @@ export default async function Image() {
             fontSize: 12,
           }}
         >
-          <span>Product</span>
-          <span>How it works</span>
-          <span>Prototype</span>
-          <span>Progress</span>
+          <span>Demo</span>
+          <span>Live flows</span>
+          <span>System</span>
+          <span>Build</span>
         </div>
 
         <div
@@ -88,7 +88,7 @@ export default async function Image() {
             fontWeight: 700,
           }}
         >
-          Join early access&nbsp; →
+          Contact Shivam&nbsp; →
         </div>
       </div>
 
@@ -133,7 +133,7 @@ export default async function Image() {
                 background: "#d5ff3f",
               }}
             />
-            EDITH CORE · WORKING PROTOTYPE · BUILDING NOW
+            INDEPENDENT WORKING PROTOTYPE · BUILT BY SHIVAM TIWARI
           </div>
 
           <div
@@ -159,7 +159,7 @@ export default async function Image() {
               lineHeight: 1.01,
             }}
           >
-            The interface for AI agents in the real world.
+            A wearable interface for AI agents.
           </div>
 
           <div
@@ -172,8 +172,8 @@ export default async function Image() {
               lineHeight: 1.45,
             }}
           >
-            See. Hear. Remember. Delegate. Act. Context and action through one
-            wearable interaction.
+            See the device, agent system, integrations, and product experience
+            working together.
           </div>
 
           <div style={{ display: "flex", gap: 12, marginTop: 24 }}>
@@ -190,7 +190,7 @@ export default async function Image() {
                 fontWeight: 700,
               }}
             >
-              Join early access&nbsp; →
+              Watch the demo
             </div>
             <div
               style={{
@@ -204,7 +204,7 @@ export default async function Image() {
                 fontSize: 12,
               }}
             >
-              Watch the demo
+              Contact Shivam
             </div>
           </div>
         </div>

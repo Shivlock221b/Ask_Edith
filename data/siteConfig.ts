@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "EDITH",
-  title: "EDITH — The Interface for AI Agents in the Real World",
+  title: "Shivam Tiwari — AI Product Builder | EDITH",
   description:
-    "EDITH combines a context-aware wearable with an orchestration layer that helps users see, hear, remember, delegate and act.",
+    "The portfolio of Shivam Tiwari: EDITH, AI agents, marketplaces, commerce, and full-stack products.",
   location: "India",
   year: "2026",
   founder: {
@@ -23,9 +23,9 @@ export const siteConfig = {
 };
 
 export const navItems = [
-  { label: "Product", href: "#vision" },
-  { label: "How it works", href: "#how-it-works" },
-  { label: "Prototype", href: "#prototype" },
-  { label: "Progress", href: "#progress" },
-  { label: "Founder", href: "#founder" },
+  { label: "Demo", href: "#demo" },
+  { label: "Live flows", href: "#use-cases" },
+  { label: "System", href: "#system" },
+  { label: "Selected work", href: "#work" },
+  { label: "About", href: "#about" },
 ];

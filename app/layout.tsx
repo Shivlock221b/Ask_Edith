@@ -3,15 +3,15 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ask-edith-eta.vercel.app"),
-  title: "EDITH — The Interface for AI Agents in the Real World",
-  description: "EDITH combines a context-aware wearable with an orchestration layer that helps users see, hear, remember, delegate and act.",
+  title: "Shivam Tiwari — AI Product Builder | EDITH",
+  description: "The portfolio of Shivam Tiwari: EDITH, AI agents, marketplaces, commerce, and full-stack products.",
   openGraph: {
-    title: "EDITH — The Interface for AI Agents in the Real World",
-    description: "See. Hear. Remember. Delegate. Act.",
+    title: "Shivam Tiwari — AI Product Builder",
+    description: "EDITH, AI agents, marketplaces, commerce, and full-stack products.",
     type: "website",
-    images: [{ url: "/opengraph-image?v=3", width: 1200, height: 630, alt: "EDITH — The interface for AI agents in the real world" }],
+    images: [{ url: "/opengraph-image?v=4", width: 1200, height: 630, alt: "EDITH — A working wearable AI agent prototype" }],
   },
-  twitter: { card: "summary_large_image", title: "EDITH — The Interface for AI Agents in the Real World", description: "See. Hear. Remember. Delegate. Act.", images: ["/opengraph-image?v=3"] },
+  twitter: { card: "summary_large_image", title: "Shivam Tiwari — AI Product Builder", description: "EDITH, AI agents, marketplaces, commerce, and full-stack products.", images: ["/opengraph-image?v=4"] },
 };
 
 export const viewport: Viewport = { themeColor: "#0a0a09", colorScheme: "dark" };

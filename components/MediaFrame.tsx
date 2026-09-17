@@ -9,8 +9,13 @@ type Media = { type: "placeholder" | "video" | "youtube" | "image"; src: string;
 
 export function MediaFrame({ media, variant = "hero", label = "Prototype media placeholder", notice }: { media: Media; variant?: "hero" | "demo"; label?: string; notice?: string }) {
   const [failed, setFailed] = useState(false);
+  const [started, setStarted] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const placeholder = media.type === "placeholder" || !media.src || failed;
+
+  function playDemo() {
+    void videoRef.current?.play();
+  }
 
   function keepHeroInsidePreview() {
     if (variant === "hero" && videoRef.current && videoRef.current.currentTime >= 20) {
@@ -37,17 +42,24 @@ export function MediaFrame({ media, variant = "hero", label = "Prototype media p
           <video
             ref={videoRef}
             src={media.src}
-            poster={media.poster}
-            muted
-            loop={variant === "demo"}
-            autoPlay
+            poster={media.poster || undefined}
+            muted={variant === "hero"}
+            autoPlay={variant === "hero"}
             playsInline
-            preload="metadata"
+            preload={variant === "demo" ? "auto" : "metadata"}
             controls={variant === "demo"}
+            onPlay={() => setStarted(true)}
             onTimeUpdate={keepHeroInsidePreview}
             onError={() => setFailed(true)}
             aria-label={label}
           />
+          {variant === "demo" && !started && (
+            <button className="demo-play-overlay" type="button" onClick={playDemo} aria-label={`Play ${label}`}>
+              <span><Play className="icon" /></span>
+              <strong>Play working demo</strong>
+              <small>Sound on</small>
+            </button>
+          )}
         </>
       )}
       {!placeholder && media.type === "image" && <div className="media-image"><Image src={media.src} alt={label} fill sizes="(max-width: 700px) 100vw, 70vw" onError={() => setFailed(true)} />{notice && <span className="media-notice">{notice}</span>}</div>}
